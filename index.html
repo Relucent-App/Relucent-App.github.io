@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relucent — Advanced Photo Editing</title>
+    <meta
+        name="description"
+        content="Relucent is an advanced photo editing app for Android."
+    >
+
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --surface: #171717;
+            --border: #292929;
+            --text: #f2f2f2;
+            --muted: #9a9a9a;
+            --accent: #FF7700;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family:
+                Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(900px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 90px 0 70px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(42px, 8vw, 72px);
+            letter-spacing: -2px;
+        }
+
+        .tagline {
+            margin: 14px auto 0;
+            max-width: 600px;
+            color: var(--muted);
+            font-size: 19px;
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        main {
+            padding: 70px 0;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            margin: 0 0 18px;
+            font-size: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            margin: 32px 0 8px;
+            font-size: 19px;
+        }
+
+        p {
+            margin: 10px 0;
+            color: var(--muted);
+        }
+
+        .intro {
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        .privacy {
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .updated {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .contact {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid var(--border);
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 70px 0 55px;
+            }
+
+            main {
+                padding: 50px 0;
+            }
+
+            section {
+                margin-bottom: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <img
+            class="logo"
+            src="assets/relucent.svg"
+            alt="Relucent logo"
+        >
+
+        <h1>Relucent<span class="accent">.</span></h1>
+
+        <p class="tagline">
+            Advanced photo editing for Android, designed to overcome
+            the limitations of existing photo editors.
+        </p>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <section>
+            <h2>About Relucent</h2>
+
+            <p class="intro">
+                Relucent is an advanced photo editing application for Android.
+                It focuses on powerful editing tools, a streamlined workflow,
+                and keeping your photos under your control.
+            </p>
+
+            <p class="intro">
+                Photo editing and AI-assisted features are processed locally
+                on your device. Relucent does not require an account and does
+                not upload your photos to external servers.
+            </p>
+        </section>
+
+        <section class="privacy" id="privacy">
+            <h2>Privacy Policy</h2>
+
+            <p class="updated">
+                Last updated: September 29, 2026
+            </p>
+
+            <p>
+                Relucent is developed and operated by an independent
+                individual developer. This Privacy Policy explains what
+                information Relucent accesses, stores, and processes when
+                you use the application.
+            </p>
+
+            <h3>Information We Collect</h3>
+
+            <p>
+                Relucent does not collect personal information such as your
+                name, email address, phone number, account credentials,
+                location, device identifiers, or advertising identifiers.
+            </p>
+
+            <p>
+                Relucent does not require you to create an account or sign in.
+            </p>
+
+            <h3>Photos and Media</h3>
+
+            <p>
+                Relucent accesses photos on your device when you choose to
+                import them for editing. Photo editing and image processing
+                are performed locally on your device.
+            </p>
+
+            <p>
+                Relucent does not upload your photos, videos, or editing
+                projects to external servers or cloud storage.
+            </p>
+
+            <p>
+                Photos and editing projects may be stored locally on your
+                device to provide editing and project functionality.
+                Exported photos are saved to your device's photo gallery
+                when you choose to export them.
+            </p>
+
+            <h3>AI and Image Processing</h3>
+
+            <p>
+                Relucent uses on-device image processing and machine learning
+                technologies for features such as subject and object
+                segmentation. These processes run locally on your device.
+                Your images are not sent to remote AI services.
+            </p>
+
+            <h3>Permissions</h3>
+
+            <p>
+                Relucent may request access to photos and media on your
+                device when required for importing or exporting images.
+                These permissions are used solely to provide the
+                application's photo editing functionality.
+            </p>
+
+            <h3>Analytics, Advertising and Tracking</h3>
+
+            <p>
+                Relucent does not currently use advertising, analytics,
+                tracking technologies, advertising identifiers, or
+                third-party crash reporting services.
+            </p>
+
+            <h3>Third-Party Services</h3>
+
+            <p>
+                Relucent does not currently send user data to external
+                services or use third-party services to collect personal
+                information.
+            </p>
+
+            <h3>Data Storage and Deletion</h3>
+
+            <p>
+                Relucent may store editing projects, preferences, temporary
+                files, and imported image copies locally on your device.
+                These files remain on your device until they are deleted
+                through the application, the device's storage settings,
+                or by uninstalling the application, where applicable.
+            </p>
+
+            <p>
+                Exported photos saved to your device's gallery remain under
+                your control and can be deleted using your device's normal
+                photo management tools.
+            </p>
+
+            <h3>Data Sharing</h3>
+
+            <p>
+                Relucent does not sell or share your personal information.
+                When you explicitly use Android's sharing functionality,
+                the selected image may be passed to another application
+                installed on your device through Android's standard
+                sharing system.
+            </p>
+
+            <h3>Children's Privacy</h3>
+
+            <p>
+                Relucent is intended for a general audience and does not
+                knowingly collect personal information from children.
+            </p>
+
+            <h3>Changes to This Policy</h3>
+
+            <p>
+                This Privacy Policy may be updated when the application's
+                data practices change. The latest version will always be
+                available on this page.
+            </p>
+
+            <h3>Contact</h3>
+
+            <p>
+                If you have any questions about this Privacy Policy or
+                Relucent's privacy practices, you can contact:
+            </p>
+
+            <a
+                class="contact"
+                href="mailto:support.relucent@gmail.com"
+            >
+                support.relucent@gmail.com
+            </a>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        © 2026 Relucent. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
